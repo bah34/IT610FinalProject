@@ -5,8 +5,9 @@ For this application I decided to go with a dynamic web app powered by the MERN 
 ## Running the App Locally
 The following commands are applicable to Windows PowerShell terminal
 
-After cloning the repo and navigating to the project's root folder, run the docker-compose using:
+After cloning the repo and navigating to the project's root folder, build it, then run the docker-compose using:
 ```
+docker-compose build
 docker-compose up
 ```
 Once all 3 containers are running you can navigate to localhost:3000 to see the React frontend. 
