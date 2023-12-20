@@ -14,6 +14,10 @@ Once all 3 containers are running you can navigate to localhost:3000 to see the 
 ![image](https://github.com/bah34/IT610FinalProject/assets/49074895/21a17746-b85b-4be7-a1e6-f6059913a376)
 Navigating to http://localhost:9000/sampleAPI will show the Express JS route "sampleAPI": 
 ![image](https://github.com/bah34/IT610FinalProject/assets/49074895/8b378d43-d850-46ce-909f-06b7b2da247e)
+
+You can also validate the connection to the MongoDB by navigating to http://localhost:9000/projectDB: 
+![image](https://github.com/bah34/IT610FinalProject/assets/49074895/f7ecfe6d-c280-4576-a0ea-11e374a35714)
+
 Navigating to http://localhost:27017/ will show the MongoDB service, although this is not how to access it:
 ![image](https://github.com/bah34/IT610FinalProject/assets/49074895/e93d7314-c008-4413-a859-aa9ceb0e9313)
 
