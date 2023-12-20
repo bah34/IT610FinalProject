@@ -11,6 +11,8 @@ docker-compose up
 ```
 Once all 3 containers are running you can navigate to localhost:3000 to see the React frontend. 
 ![image](https://github.com/bah34/IT610FinalProject/assets/49074895/21a17746-b85b-4be7-a1e6-f6059913a376)
+Navigating to http://localhost:9000/sampleAPI will show the Express JS route "sampleAPI": 
+![image](https://github.com/bah34/IT610FinalProject/assets/49074895/8b378d43-d850-46ce-909f-06b7b2da247e)
 
 ## Unfinished Status
 The project's current state does not function as a 3-tier app as originally intended. Currently the application only contains information from the frontend React app and the backend Express JS app. The Express JS app was originally configured to be the frontend and so as a consequence, the docker-compose app looks like this:
