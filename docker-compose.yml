@@ -1,0 +1,42 @@
+version: "3.8"
+
+networks:
+  app_network:
+    driver: bridge
+
+services:
+  backend:
+    build: ./backend
+    restart: always
+    container_name: backend_express
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./backend:/app
+      - ./backend/node_modules:/app/node_modules
+    networks:
+      - app_network  
+  frontend:
+    build: ./frontend
+    restart: always
+    container_name: frontend_react
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - ./frontend/node_modules:/app/node_modules
+    links:
+      - backend  
+    networks:
+      - app_network
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    volumes:
+      - ./data-node:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --noauth
+    networks:
+      - app_network
