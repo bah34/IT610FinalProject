@@ -1,7 +1,7 @@
 const express = require('express');
 var cors = require('cors');
 var path = require('path');
-// var projectDBRouter = require('./routes/projectDB');
+var projectDBRouter = require('./routes/projectDB');
 var indexRouter = require('./routes/index');
 var apiRouter = require('./routes/sampleAPI');
 
@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/projectDB', projectDBRouter);
+app.use('/projectDB', projectDBRouter);
 app.use('/', indexRouter);
 app.use('/sampleAPI', apiRouter);
 
