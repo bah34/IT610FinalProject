@@ -10,3 +10,4 @@ After cloning the repo and navigating to the project's root folder, run the dock
 docker-compose up
 ```
 Once all 3 containers are running you can navigate to localhost:3000 to see the React frontend. 
+![image](https://github.com/bah34/IT610FinalProject/assets/49074895/21a17746-b85b-4be7-a1e6-f6059913a376)
